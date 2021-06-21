@@ -1,0 +1,60 @@
+/* Variables */
+body {
+  font-family: "Roboto";
+}
+body i {
+  position: relative;
+  bottom: -17px;
+}
+
+/* Header */
+header {
+  box-shadow: 0 4px 4px -2px gray;
+}
+
+header, .search-bar, .explore-restaurants {
+  padding: 10px 0;
+}
+
+.explore-restaurants, header, .search-bar {
+  text-align: center;
+}
+
+/* Search bar */
+.search-bar, #search-bar__content {
+  background-color: #eaeaea;
+}
+
+#search-bar__content {
+  border-width: 0;
+}
+
+/* Button */
+.btn {
+  border-radius: 1em;
+  box-shadow: 1px 1px 6px #9999;
+}
+
+.card-restaurant__photo {
+  width: 100%;
+  object-fit: cover;
+}
+
+.functionung__btn, .card-restaurant__text {
+  display: flex;
+}
+
+/* Footer */
+footer {
+  background-color: #353535;
+  color: white;
+}
+footer .footer__content {
+  display: flex;
+}
+
+.logo-text {
+  font-family: "Shrikhand", cursive;
+}
+
+/*# sourceMappingURL=styles.css.map */
