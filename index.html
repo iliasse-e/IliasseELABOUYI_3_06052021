@@ -30,23 +30,23 @@
         <div class="explore-restaurants">
             <h2>Réservez le menu qui vous convient</h2>
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-            <button class="btn">Explorer nos restaurants</button>
+            <button class="btn explore-restaurants__btn">Explorer nos restaurants</button>
         </div>
 
         <div class="functioning">
             <h2>Fonctionnement</h2>
-            <div class="functionung__btn btn">
-                <p>1</p>
+            <div class="functioning__btn btn">
+                <p class="btn__no">1</p>
                 <i class="fas fa-mobile-alt"></i>
                 <p>Choisissez un restaurant</p>
             </div>
-            <div class="functionung__btn btn">
-                <p>2</p>
+            <div class="functioning__btn btn">
+                <p class="btn__no">2</p>
                 <i class="fas fa-list-ul"></i>
                 <p>Composez votre menu</p>
             </div>
-            <div class="functionung__btn btn">
-                <p>3</p>
+            <div class="functioning__btn btn">
+                <p class="btn__no">3</p>
                 <i class="fas fa-store"></i>
                 <p>Dégustez au restaurant</p>
             </div>
@@ -56,12 +56,12 @@
             <h2>Restaurants</h2>
             <div class="card-restaurant btn">
                 <img class="card-restaurant__photo" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo restaurant">
-                <div class="card-restaurant__text">
+                <div class="card-restaurant__heading">
                     <div>
-                        <h4>La palette du goût</h4>
-                        <p>Ménilmontant</p>
+                        <h4 class="card-restaurant__title">La palette du goût</h4>
+                        <p class="card-restaurant__subtitle">Ménilmontant</p>
                     </div>
-                    <div><i class="far fa-heart"></i></div>
+                    <div><i class="far fa-heart card-restaurant__like"></i></div>
                 </div>
             </div>
         </div>
@@ -69,20 +69,20 @@
 
 
     <footer>
-        <div>
-            <p class="logo-text">ohmyfood</p>
+        <div class="footer__container">
+            <p class="footer__logo footer__content">ohmyfood</p>
+            
+            <div class="footer__content">
+                <i class="fas fa-utensils"></i>
+                <p>Proposer un restaurant</p>
+            </div>
+            <div class="footer__content">
+                <i class="fas fa-hands-helping"></i>
+                <p>Devenir partenaire</p>
+            </div>
+            <p class="footer__content">Mentions légales</p>
+            <p class="footer__content">Contact</p>
         </div>
-        <div class="footer__content">
-            <i class="fas fa-utensils"></i>
-            <p>Proposer un restaurant</p>
-        </div>
-        <div class="footer__content">
-            <i class="fas fa-hands-helping"></i>
-            <p>Devenir partenaire</p>
-        </div>
-        <p>Mentions légales</p>
-        <p>Contact</p>
-
     </footer>
 </body>
 </html>

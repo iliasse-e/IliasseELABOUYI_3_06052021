@@ -1,22 +1,28 @@
+/* CSS Reset */
+p {
+  margin: 0;
+  padding: 0;
+}
+
 /* Variables */
 body {
+  margin: 0;
   font-family: "Roboto";
 }
-body i {
-  position: relative;
-  bottom: -17px;
+body main {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 /* Header */
 header {
-  box-shadow: 0 4px 4px -2px gray;
+  box-shadow: 0 4px 10px -2px gray;
+  position: relative;
+  z-index: auto;
 }
 
 header, .search-bar, .explore-restaurants {
   padding: 10px 0;
-}
-
-.explore-restaurants, header, .search-bar {
   text-align: center;
 }
 
@@ -32,7 +38,8 @@ header, .search-bar, .explore-restaurants {
 /* Button */
 .btn {
   border-radius: 1em;
-  box-shadow: 1px 1px 6px #9999;
+  box-shadow: 0px 5px 10px -2px #9999;
+  margin: 10px 0;
 }
 
 .card-restaurant__photo {
@@ -40,8 +47,36 @@ header, .search-bar, .explore-restaurants {
   object-fit: cover;
 }
 
-.functionung__btn, .card-restaurant__text {
+.functioning__btn, .card-restaurant__heading {
   display: flex;
+}
+
+/* Explore */
+.explore-restaurants .btn {
+  background-image: linear-gradient(#e771da, #a55cdb);
+  padding: 15px 20px;
+  color: white;
+  border-radius: 2em;
+  border-width: 0;
+  font-weight: 500;
+}
+
+/* Fonctionnement */
+.functioning .functioning__btn {
+  justify-content: space-between;
+  padding-right: 33%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.functioning .functioning__btn .btn__no {
+  border-radius: 50%;
+  width: 4%;
+  padding: 3px 7px;
+  background: #fff;
+  background-color: #9356DC;
+  color: white;
+  font-weight: 500;
+  font-size: 0.9em;
 }
 
 /* Footer */
@@ -49,12 +84,19 @@ footer {
   background-color: #353535;
   color: white;
 }
-footer .footer__content {
-  display: flex;
+footer .footer__container {
+  padding: 20px;
 }
-
-.logo-text {
+footer .footer__container .footer__content {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 20px;
+  margin-bottom: 10px;
+}
+footer .footer__container .footer__logo {
   font-family: "Shrikhand", cursive;
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,52 @@
+* [33m573fe81[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m Revert "First page buttons"
+[31m|[m D	Maquettes Ohmyfood/.DS_Store
+[31m|[m D	"Maquettes Ohmyfood/Brief cre\314\201atif - Ohmyfood!.pdf"
+[31m|[m D	Maquettes Ohmyfood/Oh my food - Textes.txt
+[31m|[m D	Maquettes Ohmyfood/maquettes/.DS_Store
+[31m|[m D	Maquettes Ohmyfood/maquettes/.xdp_Accueil.png.FPWT40
+[31m|[m D	Maquettes Ohmyfood/maquettes/.xdp_Accueil.png.png
+[31m|[m D	Maquettes Ohmyfood/maquettes/Accueil.png
+[31m|[m D	Maquettes Ohmyfood/maquettes/Animations/Animation - Page Menu - Apparition progressive.mp4
+[31m|[m D	"Maquettes Ohmyfood/maquettes/Animations/Animation - Page Menu - Se\314\201lection d_un plat.mp4"
+[31m|[m D	Maquettes Ohmyfood/maquettes/Maquette.jpg
+[31m|[m D	"Maquettes Ohmyfood/maquettes/Menu - A\314\200 la franc\314\247aise.png"
+[31m|[m D	"Maquettes Ohmyfood/maquettes/Menu - La note enchante\314\201e.png"
+[31m|[m D	"Maquettes Ohmyfood/maquettes/Menu - La palette du gou\314\202t.png"
+[31m|[m D	"Maquettes Ohmyfood/maquettes/Menu - Le de\314\201lice des sens.png"
+[31m|[m M	index.html
+[31m|[m M	sass/styles.scss
+[31m|[m M	styles.css
+[31m|[m M	styles.css.map
+* [33m27462f9[m First page buttons
+[31m|[m A	Maquettes Ohmyfood/.DS_Store
+[31m|[m A	"Maquettes Ohmyfood/Brief cre\314\201atif - Ohmyfood!.pdf"
+[31m|[m A	Maquettes Ohmyfood/Oh my food - Textes.txt
+[31m|[m A	Maquettes Ohmyfood/maquettes/.DS_Store
+[31m|[m A	Maquettes Ohmyfood/maquettes/.xdp_Accueil.png.FPWT40
+[31m|[m A	Maquettes Ohmyfood/maquettes/.xdp_Accueil.png.png
+[31m|[m A	Maquettes Ohmyfood/maquettes/Accueil.png
+[31m|[m A	Maquettes Ohmyfood/maquettes/Animations/Animation - Page Menu - Apparition progressive.mp4
+[31m|[m A	"Maquettes Ohmyfood/maquettes/Animations/Animation - Page Menu - Se\314\201lection d_un plat.mp4"
+[31m|[m A	Maquettes Ohmyfood/maquettes/Maquette.jpg
+[31m|[m A	"Maquettes Ohmyfood/maquettes/Menu - A\314\200 la franc\314\247aise.png"
+[31m|[m A	"Maquettes Ohmyfood/maquettes/Menu - La note enchante\314\201e.png"
+[31m|[m A	"Maquettes Ohmyfood/maquettes/Menu - La palette du gou\314\202t.png"
+[31m|[m A	"Maquettes Ohmyfood/maquettes/Menu - Le de\314\201lice des sens.png"
+[31m|[m M	index.html
+[31m|[m M	sass/styles.scss
+[31m|[m M	styles.css
+[31m|[m M	styles.css.map
+* [33md3f3d64[m first commit
+  A	dart-sass/sass
+  A	dart-sass/src/LICENSE
+  A	images/.DS_Store
+  A	images/logo/ohmyfood.png
+  A	images/logo/ohmyfood@2x.svg
+  A	images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg
+  A	images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg
+  A	images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg
+  A	images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg
+  A	index.html
+  A	sass/styles.scss
+  A	styles.css
+  A	styles.css.map
