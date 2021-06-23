@@ -31,18 +31,13 @@ header, .search-bar, .explore-restaurants {
 
 /* Search bar */
 
-.search-bar {
+.search-bar, #search-bar__content {
     background-color: #eaeaea;
-    i {
-        position:unset;
-    }
-    #search-bar__content {
-        border-width: 0;
-        background-color: #eaeaea;
-    }
 }
 
-
+#search-bar__content {
+    border-width: 0;
+}
 
 /* Button */
 
@@ -52,28 +47,10 @@ header, .search-bar, .explore-restaurants {
 }
 .card-restaurant__photo {    
     width: 100%;
-    height: 150px;
     object-fit: cover;
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
 }
 .functionung__btn, .card-restaurant__text {
     display: flex;
-}
-
-.card-restaurant__text {
-    justify-content: space-between;
-    margin: 0 20px 0 20px;
-}
-
-/* functioning */
-
-.functioning {
-    .functionung__btn {
-        justify-content: space-between;
-        padding-right: 33%;
-        margin: 25px 5px;
-    }
 }
 
 /* Footer */
@@ -81,12 +58,9 @@ header, .search-bar, .explore-restaurants {
 footer {
     background-color: #353535;
     color: white;
-    .footer-container {
-        padding: 20px;
-        margin-top: 50px;
-        .footer__content {
-            display: flex;
-        }
+    .footer__content {
+        display: flex;
+        
     }
 }
 
