@@ -2,6 +2,13 @@
 /* Variables */
 /* Colors */
 /* Buttons */
+.btn {
+  /*border-radius: 1em;*/
+  -webkit-box-shadow: 0px 5px 10px -2px #9999;
+          box-shadow: 0px 5px 10px -2px #9999;
+  margin: 20px 0;
+}
+
 .my-btn {
   background-image: linear-gradient(0.9turn, #a55cdb, #e771da);
   padding: 15px 20px;
@@ -9,13 +16,8 @@
   border-radius: 2em;
   border-width: 0;
   font-weight: 500;
-  box-shadow: inset 0px -5px 5px rgba(0, 0, 0, 0.2), 0px 5px 10px -2px #9999;
-}
-
-.btn {
-  border-radius: 1em;
-  box-shadow: 0px 5px 10px -2px #9999;
-  margin: 20px 0;
+  -webkit-box-shadow: inset 0px -5px 5px rgba(0, 0, 0, 0.2), 0px 5px 10px -2px #9999;
+          box-shadow: inset 0px -5px 5px rgba(0, 0, 0, 0.2), 0px 5px 10px -2px #9999;
 }
 
 /* CSS Reset */
@@ -27,8 +29,9 @@ p {
 /* Body and general parameters */
 body {
   margin: 0;
-  font-family: "Roboto";
+  font-family: 'Roboto';
 }
+
 body main {
   margin-left: 20px;
   margin-right: 20px;
@@ -37,16 +40,20 @@ body main {
 /* Button */
 .card-restaurant__photo {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .functioning__btn, .card-restaurant__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 /* Header */
 header {
-  box-shadow: 0 4px 10px -7px gray;
+  -webkit-box-shadow: 0 4px 10px -7px gray;
+          box-shadow: 0 4px 10px -7px gray;
   position: relative;
   z-index: auto;
 }
@@ -82,13 +89,17 @@ header, .search-bar, .explore-restaurants {
 .functioning {
   margin: 50px 0;
 }
+
 .functioning .functioning__btn {
   margin-left: 5px;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-right: 25%;
   padding-top: 25px;
   padding-bottom: 25px;
 }
+
 .functioning .functioning__btn .btn__no {
   border-radius: 50%;
   width: 4%;
@@ -101,15 +112,19 @@ header, .search-bar, .explore-restaurants {
   position: relative;
   left: -10px;
 }
+
 .functioning .functioning__btn .fas {
   color: #7e7e7e;
 }
+
 .functioning .functioning__btn p {
   font-weight: 500;
 }
+
 .functioning .functioning__btn:hover {
   background-color: #f5edff;
 }
+
 .functioning .functioning__btn:hover i {
   color: #9356DC;
 }
@@ -120,31 +135,40 @@ header, .search-bar, .explore-restaurants {
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
 }
+
 .card-restaurant .card-restaurant__heading {
   padding: 5px 10px;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .card-restaurant .card-restaurant__heading * {
   margin: 5px 0;
 }
+
 .card-restaurant .card-restaurant__heading .card-restaurant__subtitle {
   font-weight: 300;
 }
+
 .card-restaurant .card-restaurant__heading .card-restaurant__like-container {
   font-size: 1.5em;
   padding-right: 20px;
   padding-top: 5px;
 }
+
 .card-restaurant .card-restaurant__heading .card-restaurant__like-container .card-restaurant__like {
   -webkit-text-stroke: 2.5px black;
   color: white;
 }
+
 .card-restaurant .card-restaurant__heading .card-restaurant__like-container .card-restaurant__like:hover {
   background: linear-gradient(0.9turn, #a55cdb, #e771da);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0;
+  -webkit-transition: width 2s, height 4s;
   transition: width 2s, height 4s;
 }
 
@@ -153,26 +177,32 @@ footer {
   background-color: #353535;
   color: white;
 }
+
 footer .footer__container {
   padding: 20px;
 }
+
 footer .footer__container .footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
   height: 20px;
   margin-bottom: 10px;
 }
+
 footer .footer__container .footer__content i {
   margin-right: 10px;
 }
+
 footer .footer__container .footer__content p {
   font-weight: 500;
 }
+
 footer .footer__container .footer__logo {
-  font-family: "Shrikhand", cursive;
+  font-family: 'Shrikhand', cursive;
   margin: 5px 0 25px 0;
   font-size: 1.1em;
 }
-
 /*# sourceMappingURL=styles.css.map */
