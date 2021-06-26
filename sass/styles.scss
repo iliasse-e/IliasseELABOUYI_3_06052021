@@ -1,10 +1,10 @@
 /* Import */
 
     /* Variables */
-    @import '/home/chahid/Documents/Projets-OC/Projet-3/Design-material/variables.scss';
+    @import '/home/chahid/Documents/Projets-OC/Projet-3/sass/Design-material/variables.scss';
 
     /* Buttons */
-    @import '/home/chahid/Documents/Projets-OC/Projet-3/Design-material/button-style.scss';
+    @import '/home/chahid/Documents/Projets-OC/Projet-3/sass/Design-material/button-style.scss';
 
     
 /* CSS Reset */
@@ -24,18 +24,6 @@ body {
         margin-right: 20px;
     }
 }
-
-/* Button */
-
-
-.card-restaurant__photo {    
-    width: 100%;
-    object-fit: cover;
-}
-.functioning__btn, .card-restaurant__heading {
-    display: flex;
-}
-
 
 
 /* Header */
@@ -84,6 +72,7 @@ header, .search-bar, .explore-restaurants {
 .functioning {
     margin : 50px 0;
     .functioning__btn {
+        display: flex;
         margin-left: 5px;
         justify-content: space-between;
         padding-right: 25%;
@@ -116,44 +105,37 @@ header, .search-bar, .explore-restaurants {
     }
 }
 
+
 /* Restaurants */
 
-.card-restaurant {
-    .card-restaurant__photo {
-        height: 150px;
-        border-top-left-radius: 1em;
-        border-top-right-radius: 1em;
-    }
-    .card-restaurant__heading {
-        padding: 5px 10px;
-        justify-content: space-between;
-        * { margin: 5px 0;
-        }
-        .card-restaurant__subtitle {
-            font-weight: 300;
-        }
-        .card-restaurant__like-container {
-            font-size: 1.5em;
-            padding-right: 20px;
-            padding-top: 5px;
-            .card-restaurant__like {
-                -webkit-text-stroke: 2.5px black;
-                color: white;
+.list {
+    margin: 70px 0;
+    .card-restaurant {
+        .card-restaurant__photo {
+            width: 100%;
+            object-fit: cover;
+            height: 150px;
+            border-top-left-radius: 1em;
+            border-top-right-radius: 1em;
+        }   
+            .card-restaurant__like-container {
+                font-size: 1.5em;
             }
-            .card-restaurant__like:hover {  
-                    background: linear-gradient(0.9turn, #a55cdb, #e771da);
-                    background-clip: border-box;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    -webkit-text-stroke:0;
-                    transition: width 2s, height 4s;
-            }
-            
-        
-        
+                .card-restaurant__like {
+                    -webkit-text-stroke: 1.5px black;
+                    color: white;
+                }
+                .card-restaurant__like:hover {  
+                        background: linear-gradient(0.9turn, #a55cdb, #e771da);
+                        background-clip: border-box;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        -webkit-text-stroke:0;
+                        transition: width 2s, height 4s;
+                }
         }
-    }
 }
+
 
 /* Footer */
 

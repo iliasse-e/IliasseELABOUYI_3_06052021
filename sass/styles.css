@@ -2,8 +2,9 @@
 /* Variables */
 /* Colors */
 /* Buttons */
+/* Button's type and form */
 .btn {
-  /*border-radius: 1em;*/
+  border-radius: 1em;
   -webkit-box-shadow: 0px 5px 10px -2px #9999;
           box-shadow: 0px 5px 10px -2px #9999;
   margin: 20px 0;
@@ -18,6 +19,32 @@
   font-weight: 500;
   -webkit-box-shadow: inset 0px -5px 5px rgba(0, 0, 0, 0.2), 0px 5px 10px -2px #9999;
           box-shadow: inset 0px -5px 5px rgba(0, 0, 0, 0.2), 0px 5px 10px -2px #9999;
+  min-width: 180px;
+}
+
+/* Button's heading */
+.heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.heading * {
+  margin: 5px 0;
+}
+
+.heading .subtitle {
+  font-weight: 300;
+  font-size: 0.9em;
+}
+
+.heading .aside {
+  padding-right: 20px;
+  padding-top: 5px;
 }
 
 /* CSS Reset */
@@ -35,19 +62,6 @@ body {
 body main {
   margin-left: 20px;
   margin-right: 20px;
-}
-
-/* Button */
-.card-restaurant__photo {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.functioning__btn, .card-restaurant__heading {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 /* Header */
@@ -91,6 +105,9 @@ header, .search-bar, .explore-restaurants {
 }
 
 .functioning .functioning__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-left: 5px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -130,39 +147,29 @@ header, .search-bar, .explore-restaurants {
 }
 
 /* Restaurants */
-.card-restaurant .card-restaurant__photo {
+.list {
+  margin: 70px 0;
+}
+
+.list .card-restaurant .card-restaurant__photo {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 150px;
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
 }
 
-.card-restaurant .card-restaurant__heading {
-  padding: 5px 10px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.card-restaurant .card-restaurant__heading * {
-  margin: 5px 0;
-}
-
-.card-restaurant .card-restaurant__heading .card-restaurant__subtitle {
-  font-weight: 300;
-}
-
-.card-restaurant .card-restaurant__heading .card-restaurant__like-container {
+.list .card-restaurant .card-restaurant__like-container {
   font-size: 1.5em;
-  padding-right: 20px;
-  padding-top: 5px;
 }
 
-.card-restaurant .card-restaurant__heading .card-restaurant__like-container .card-restaurant__like {
-  -webkit-text-stroke: 2.5px black;
+.list .card-restaurant .card-restaurant__like {
+  -webkit-text-stroke: 1.5px black;
   color: white;
 }
 
-.card-restaurant .card-restaurant__heading .card-restaurant__like-container .card-restaurant__like:hover {
+.list .card-restaurant .card-restaurant__like:hover {
   background: linear-gradient(0.9turn, #a55cdb, #e771da);
   background-clip: border-box;
   -webkit-background-clip: text;

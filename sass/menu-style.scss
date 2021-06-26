@@ -1,5 +1,13 @@
-@import 'styles.scss';
-@import '/home/chahid/Documents/Projets-OC/Projet-3/Design-material/button-style.scss';
+/* Import */
+
+    /* Variables */
+    @import '/home/chahid/Documents/Projets-OC/Projet-3/sass/Design-material/variables.scss';
+
+    /* Main page's scss file */
+    @import 'styles.scss';
+
+    /* Buttons */
+    @import '/home/chahid/Documents/Projets-OC/Projet-3/sass/Design-material/button-style.scss';
 
 
 /* Header */
@@ -10,6 +18,28 @@ header {
     z-index: auto;
 }
 
+.menu-background-image {
+    width: 100%;
+}
+
+/* Dishes cards */
+
+.menu-list__type__dish-price {
+    font-weight: 600;
+    font-size: 0.9em;
+    padding-top: 28px; /* !!!!!!! Element à prioriser !!!!!!!! */
+}
+
+.aside {
+    padding-top: unset;
+}
+
+
+/* Button */
+
+.btn-container {
+    text-align: center;
+}
 
 /* Footer */
 
