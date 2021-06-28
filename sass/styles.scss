@@ -25,6 +25,10 @@ body {
     }
 }
 
+a {
+    text-decoration: none;
+}
+
 
 /* Header */
 
@@ -124,8 +128,7 @@ header, .search-bar, .explore-restaurants {
                 .card-restaurant__like {
                     -webkit-text-stroke: 1.5px black;
                     color: white;
-                }
-                .card-restaurant__like:hover {  
+                &:hover {  
                         background: linear-gradient(0.9turn, #a55cdb, #e771da);
                         background-clip: border-box;
                         -webkit-background-clip: text;
@@ -133,6 +136,7 @@ header, .search-bar, .explore-restaurants {
                         -webkit-text-stroke:0;
                         transition: width 2s, height 4s;
                 }
+            }
         }
 }
 

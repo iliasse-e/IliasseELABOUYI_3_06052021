@@ -69,6 +69,10 @@ body main {
   margin-right: 20px;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Header */
 header {
   -webkit-box-shadow: 0 4px 10px -7px gray;
@@ -282,10 +286,7 @@ header {
   font-size: 0.9em;
   padding-top: 28px;
   /* !!!!!!! Element à prioriser !!!!!!!! */
-}
-
-.aside {
-  padding-top: unset;
+  background-color: brown;
 }
 
 /* Button */
