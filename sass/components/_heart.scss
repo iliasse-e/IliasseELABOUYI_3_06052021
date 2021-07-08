@@ -1,0 +1,13 @@
+.card-restaurant__like {
+    -webkit-text-stroke: 1.5px black;
+    color: white;
+    
+&:hover {  
+        @include pink-gradient;
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke:0;
+        transition: .4s;
+}
+}

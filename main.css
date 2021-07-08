@@ -1,0 +1,224 @@
+@charset "UTF-8";
+/* Import */
+/* Vendors */
+/* Theme */
+/* Base */
+/* CSS Reset */
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body and general parameters */
+body {
+  max-width: 400px;
+  margin: auto;
+  font-family: "Roboto";
+}
+body main {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Utils */
+/* Colors */
+/* Components */
+/* Button basic + hover effect (lighten & shadow) */
+.btn {
+  border-radius: 1em;
+  box-shadow: 0px 5px 10px -2px #9999;
+  margin: 20px 0;
+  transition: 200ms;
+}
+.btn:hover {
+  opacity: 0.9;
+  box-shadow: 0px 5px 10px 2px #9999;
+}
+
+.my-btn {
+  background: linear-gradient(0.9turn, #a55cdb, #e771da);
+  padding: 15px 20px;
+  color: white;
+  border-radius: 2em;
+  border-width: 0;
+  font-weight: 500;
+  box-shadow: inset 0px -5px 5px rgba(0, 0, 0, 0.2), 0px 5px 10px -2px #9999;
+  min-width: 180px;
+}
+
+/* Button's heading */
+.heading {
+  display: flex;
+  padding: 5px 10px;
+  justify-content: space-between;
+}
+.heading * {
+  margin: 5px 0;
+}
+.heading .subtitle {
+  font-weight: 300;
+  font-size: 0.9em;
+}
+.heading .aside {
+  padding-right: 20px;
+  padding-top: 5px;
+}
+
+.card-restaurant__like {
+  -webkit-text-stroke: 1.5px black;
+  color: white;
+}
+.card-restaurant__like:hover {
+  background: linear-gradient(0.9turn, #a55cdb, #e771da);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0;
+  transition: 0.4s;
+}
+
+/* Pages */
+.explore-restaurants {
+  padding: 10px 0;
+  text-align: center;
+}
+.explore-restaurants p {
+  font-weight: 300;
+}
+
+.functioning {
+  margin: 50px 0;
+}
+.functioning .functioning__btn {
+  display: flex;
+  margin-left: 5px;
+  justify-content: space-between;
+  padding-right: 25%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.functioning .functioning__btn .btn__no {
+  border-radius: 50%;
+  width: 4%;
+  padding: 3px 7px;
+  background: #fff;
+  background-color: #9356DC;
+  color: white;
+  font-weight: 500;
+  font-size: 0.9em;
+  position: relative;
+  left: -10px;
+}
+.functioning .functioning__btn .fas {
+  color: #7e7e7e;
+}
+.functioning .functioning__btn p {
+  font-weight: 500;
+}
+.functioning .functioning__btn:hover {
+  background-color: #f5edff;
+}
+.functioning .functioning__btn:hover i {
+  color: #9356DC;
+}
+
+.list {
+  margin: 70px 0;
+}
+.list .card-restaurant__photo {
+  width: 100%;
+  object-fit: cover;
+  height: 150px;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+.list .card-restaurant .card-restaurant__like-container {
+  font-size: 1.5em;
+}
+
+.search-bar, #search-bar__content {
+  background-color: #eaeaea;
+  color: #353535;
+}
+
+.search-bar {
+  padding: 15px 0;
+  padding: 10px 0;
+  text-align: center;
+}
+
+#search-bar__content {
+  border-width: 0;
+  font-weight: 500;
+  font-size: 0.9em;
+  width: 110px;
+}
+
+.menu-list__type__dish-price {
+  font-weight: 600;
+  font-size: 0.9em;
+  padding-top: 28px;
+  /* !!!!!!! Element à prioriser !!!!!!!! */
+  background-color: brown;
+}
+
+.menu-background-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.btn-container {
+  text-align: center;
+}
+
+/* Layout */
+header {
+  box-shadow: 0 4px 10px -7px gray;
+  position: relative;
+  z-index: auto;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.arrow {
+  position: relative;
+  left: -70px;
+}
+.arrow i {
+  vertical-align: -8px;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+}
+footer .footer__container {
+  padding: 20px;
+}
+footer .footer__container .footer__content {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 20px;
+  margin-bottom: 10px;
+}
+footer .footer__container .footer__content i {
+  margin-right: 10px;
+}
+footer .footer__container .footer__content p {
+  font-weight: 500;
+}
+footer .footer__container .footer__logo {
+  font-family: "Shrikhand", cursive;
+  margin: 5px 0 25px 0;
+  font-size: 1.1em;
+}
+
+/*# sourceMappingURL=main.css.map */

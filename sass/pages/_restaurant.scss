@@ -1,0 +1,17 @@
+.list {
+    margin: 70px 0;
+    .card-restaurant {
+        &__photo {
+            width: 100%;
+            object-fit: cover;
+            height: 150px;
+            border-top-left-radius: 1em;
+            border-top-right-radius: 1em;
+        }   
+            .card-restaurant__like-container {
+                font-size: 1.5em;
+            }
+              
+        }
+}
+

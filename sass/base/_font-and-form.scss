@@ -1,0 +1,23 @@
+/* CSS Reset */
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body and general parameters */
+
+body {
+    max-width: 400px;
+    margin: auto;
+    font-family: 'Roboto';
+    main {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

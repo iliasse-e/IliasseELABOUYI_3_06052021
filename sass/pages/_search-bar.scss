@@ -1,0 +1,17 @@
+.search-bar, #search-bar__content {
+    background-color: #eaeaea;
+    color: $fifth;
+}
+
+.search-bar {
+    padding: 15px 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#search-bar__content {
+    border-width: 0;
+    font-weight: 500;
+    font-size: 0.9em;
+    width: 110px;
+}

@@ -1,0 +1,35 @@
+.functioning {
+    margin : 50px 0;
+    .functioning__btn {
+        display: flex;
+        margin-left: 5px;
+        justify-content: space-between;
+        padding-right: 25%;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        .btn__no {
+            border-radius: 50%;
+            width: 4%;
+            padding: 3px 7px;
+            background: #fff;
+            background-color: $primary;
+            color: white;
+            font-weight: 500;
+            font-size: 0.9em;
+            position: relative;
+            left: -10px;
+        }
+        .fas {
+            color : $forth;
+        }
+        p {
+            font-weight: 500;
+        }
+    }
+    .functioning__btn:hover {
+        background-color: #f5edff;
+        i {
+            color: $primary;
+        }
+    }
+}
