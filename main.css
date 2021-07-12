@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Import */
 /* Vendors */
 /* Theme */
@@ -25,6 +24,11 @@ a {
   color: inherit;
 }
 
+/* Special font */
+.footer__logo, .menu-list__header-title {
+  font-family: "Shrikhand", cursive;
+}
+
 /* Utils */
 /* Colors */
 /* Components */
@@ -49,6 +53,7 @@ a {
   font-weight: 500;
   box-shadow: inset 0px -5px 5px rgba(0, 0, 0, 0.2), 0px 5px 10px -2px #9999;
   min-width: 180px;
+  font-size: 0.9em;
 }
 
 /* Button's heading */
@@ -60,10 +65,12 @@ a {
 .heading * {
   margin: 5px 0;
 }
+
 .heading .subtitle {
   font-weight: 300;
   font-size: 0.9em;
 }
+
 .heading .aside {
   padding-right: 20px;
   padding-top: 5px;
@@ -93,7 +100,7 @@ a {
 .card-restaurant__like:hover + .card-restaurant__liked {
   z-index: 0;
   transition: transform ease-in-out 300ms;
-  transform: scale(1);
+  transform: scale(1.1);
 }
 
 /* Pages */
@@ -151,7 +158,8 @@ a {
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
 }
-.list .card-restaurant .card-restaurant__like-container {
+
+.card-restaurant__like-container {
   font-size: 1.5em;
 }
 
@@ -173,22 +181,94 @@ a {
   width: 110px;
 }
 
-.menu-list__type__dish-price {
+.heading .menu-list__type__dish-price {
   font-weight: 600;
   font-size: 0.9em;
-  padding-top: 28px;
-  /* !!!!!!! Element à prioriser !!!!!!!! */
-  background-color: brown;
+  padding-top: 25px;
+}
+
+@keyframes menu-scroll {
+  0% {
+    transform: scaleY(0.3);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+/* Spinner */
+@keyframes spinner {
+  0% {
+    width: 50px;
+    fill: none;
+    stroke-width: 3;
+    opacity: 0.6;
+    background: brown;
+    transform: rotate(0deg);
+    stroke: #9356DC;
+  }
+  100% {
+    opacity: 0.6;
+    transform: rotate(360deg);
+    stroke: #FF79DA;
+  }
+}
+.menu-body main {
+  margin: 0;
 }
 
 .menu-background-image {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  position: relative;
+  z-index: -2;
+  margin-bottom: -40px;
+}
+
+/* Menu list */
+.menu-list {
+  border-radius: 3em 3em 0 0;
+  background: #f6f6f6;
+}
+.menu-list section {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.menu-list__type-title {
+  border-bottom-width: 20px;
+}
+
+.title-underline {
+  color: #99e2d0;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-bottom-width: 3px;
+  text-align: left;
+  margin: 10px 0;
+  width: 40px;
+}
+
+.menu-list__header {
+  display: flex;
+  justify-content: space-around;
+}
+.menu-list__header .aside {
+  padding-top: 23px;
 }
 
 .btn-container {
   text-align: center;
+}
+
+/* Animation scroll */
+.menu-list__type {
+  animation: menu-scroll 1000ms;
+  transform-origin: top;
+}
+
+.main-body {
+  animation: spinner 1s;
 }
 
 /* Layout */

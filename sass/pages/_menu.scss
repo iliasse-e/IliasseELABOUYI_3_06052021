@@ -1,9 +1,64 @@
+@import "/home/chahid/Documents/Projets-OC/Projet-3/sass/components/_keyframes.scss";
+
+.menu-body main { 
+    margin: 0;
+}
+
 .menu-background-image {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    position: relative;
+    z-index: -2;
+    margin-bottom: -40px;
+}
+
+/* Menu list */
+
+.menu-list {
+    border-radius: 3em 3em 0 0;
+    background: $white-background;
+    section {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+.menu-list__type-title {
+    border-bottom-width:20px;
+}
+
+.title-underline {
+    color:$mint;
+    border-top-width:0px;
+    border-left-width: 0px;
+    border-bottom-width:3px ;
+    text-align: left;
+    margin: 10px 0;
+    width: 40px;
+}
+
+
+.menu-list__header {
+    display: flex;
+    justify-content: space-around;
+    .aside {
+        padding-top: 23px;
+    }
 }
 
 .btn-container {
     text-align: center;
+}
+
+/* Animation scroll */
+
+.menu-list__type {
+    animation: menu-scroll 1000ms ;
+    transform-origin: top;
+}
+
+
+.main-body {
+    animation: spinner 1s;
 }

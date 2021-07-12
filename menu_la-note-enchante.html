@@ -14,7 +14,7 @@
     <link rel="icon" type="image/png" href="images/logo/ohmyfood@2x.svg">
     <title>Ohmyfood - Reservez le menu qui vous convient</title>
 </head>
-<body>
+<body class="menu-body">
     <header>
         <div class="arrow">
             <a href="index.html" class="back-home">
@@ -34,12 +34,16 @@
 
             <div class="menu-list__header">
                 <h2 class="menu-list__header-title">La note Enchantée</h2>
-                <i class="fas fa-heart"></i>
+                <div class="card-restaurant__like-container aside">
+                    <i class="fas fa-heart card-restaurant__like"></i>
+                    <i class="fas fa-heart card-restaurant__liked"></i>
+                </div>
             </div>
 
             <!-- Entrées -->
             <section class="menu-list__type">
                 <p class="menu-list__type-title">ENTREES</p>
+                <hr class="title-underline"/>
 
                 <!-- Dish card -->
                 <div class="menu-list__type__dish btn heading">
@@ -59,11 +63,30 @@
                     <div class="menu-list__type__dish-price aside">20€</div>
                 </div>
 
+                <!-- Dish card -->
+                <div class="menu-list__type__dish btn heading">
+                    <div class="menu-list__type__dish-text">
+                        <h4 class="menu-list__type__dish-title title">Homard et espuma de légumes</h4>
+                        <p class="menu-list__type__dish-subtitle subtitle">Mariné aux zests d'orange</p>
+                    </div>
+                    <div class="menu-list__type__dish-price aside">20€</div>
+                </div>
+
+                <!-- Dish card -->
+                <div class="menu-list__type__dish btn heading">
+                    <div class="menu-list__type__dish-text">
+                        <h4 class="menu-list__type__dish-title title">Foie gras de canard cuit entier</h4>
+                        <p class="menu-list__type__dish-subtitle subtitle">Confiture de figue et toasté</p>
+                    </div>
+                    <div class="menu-list__type__dish-price aside">35€</div>
+                </div>
+
             </section>
 
             <!--Plats-->
             <section class="menu-list__type">
                 <p class="menu-list__type-title">PLATS</p>
+                <hr class="title-underline"/>
 
                 <!-- Dish card -->
                 <div class="menu-list__type__dish btn heading">
@@ -83,9 +106,51 @@
                     <div class="menu-list__type__dish-price aside">35€</div>
                 </div>
 
+                <!-- Dish card -->
+                <div class="menu-list__type__dish btn heading">
+                    <div class="menu-list__type__dish-text">
+                        <h4 class="menu-list__type__dish-title title">Mijoté de queue de boeuf</h4>
+                        <p class="menu-list__type__dish-subtitle subtitle">Et riz sauvage aux zests de citron</p>
+                    </div>
+                    <div class="menu-list__type__dish-price aside">44€</div>
+                </div>
+
             </section>
 
             <!--Dessert-->
+              <!--Plats-->
+              <section class="menu-list__type">
+                <p class="menu-list__type-title">DESSERTS</p>
+                <hr class="title-underline"/>
+
+                <!-- Dish card -->
+                <div class="menu-list__type__dish btn heading">
+                    <div class="menu-list__type__dish-text">
+                        <h4 class="menu-list__type__dish-title title">Macaron noisette et chocolat</h4>
+                        <p class="menu-list__type__dish-subtitle subtitle">Glace au caramel brun et sel de Guérande</p>
+                    </div>
+                    <div class="menu-list__type__dish-price aside">18€</div>
+                </div>
+
+                <!-- Dish card -->
+                <div class="menu-list__type__dish btn heading">
+                    <div class="menu-list__type__dish-text">
+                        <h4 class="menu-list__type__dish-title title">Baba au rhum revisité</h4>
+                        <p class="menu-list__type__dish-subtitle subtitle">Avec son coulis de citron</p>
+                    </div>
+                    <div class="menu-list__type__dish-price aside">22€</div>
+                </div>
+
+                <!-- Dish card -->
+                <div class="menu-list__type__dish btn heading">
+                    <div class="menu-list__type__dish-text">
+                        <h4 class="menu-list__type__dish-title title">Tarte au citron meringuée</h4>
+                        <p class="menu-list__type__dish-subtitle subtitle">Destructurée</p>
+                    </div>
+                    <div class="menu-list__type__dish-price aside">23€</div>
+                </div>
+
+            </section>
 
             <!--Commander-->
 

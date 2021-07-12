@@ -1,0 +1,31 @@
+@keyframes menu-scroll {
+    0% {
+        transform: scaleY(0.3);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+
+
+/* Spinner */
+
+@keyframes spinner {
+    
+    0% {
+        width: 50px;
+        fill: none;
+        stroke-width: 3;
+        opacity: 0.6;
+        background: brown;
+        transform: rotate(0deg);
+        stroke: $primary;
+    }
+  
+    100% {
+        opacity: 0.6;
+        transform: rotate(360deg);
+        stroke: $secondary;
+    }
+}
