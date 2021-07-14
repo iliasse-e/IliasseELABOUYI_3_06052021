@@ -38,7 +38,6 @@
     width: 40px;
 }
 
-
 .menu-list__header {
     display: flex;
     justify-content: space-around;
@@ -56,9 +55,30 @@
 .menu-list__type {
     animation: menu-scroll 1000ms ;
     transform-origin: top;
+   
 }
 
 
-.main-body {
-    animation: spinner 1s;
+.loading {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    left: 47%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    width: 70px;
+    height: 70px;
+    @include pink-gradient;
+    border-radius: 50%;
+    opacity: 0;
+
+    animation: spinner ease-out 2000ms;
+}
+
+header, main, footer {
+    animation: spinner-layer 2000ms;
 }
