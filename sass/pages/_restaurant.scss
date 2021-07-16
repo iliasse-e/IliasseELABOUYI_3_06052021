@@ -1,3 +1,5 @@
+/* Main page */
+
 .list {
     margin: 70px 0;
     .card-restaurant {
@@ -19,10 +21,10 @@
 /* Sticker nouveau */
 
 .card-sticker {
-width: 80px;
+width: 25%;
 background-color: #99e2d0;
 position: relative;
-right: -260px;
+right: -70%;
 bottom: -15px;
 color: #008766;
 font-weight: 600;
@@ -34,4 +36,30 @@ border-radius: 0.13em;
 
 .disable {
     z-index: -1;
+}
+
+/* Spinner animation */
+
+.loading {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    left: 37%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    width: 70px;
+    height: 70px;
+    @include pink-gradient;
+    border-radius: 50%;
+    opacity: 0;
+
+    animation: spinner ease-out 2000ms;
+}
+
+.main-body header, .main-body main, .main-body footer {
+    animation: spinner-layer 2000ms;
 }

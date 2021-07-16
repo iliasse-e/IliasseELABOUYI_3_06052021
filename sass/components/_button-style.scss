@@ -1,5 +1,5 @@
-
 /* Button basic + hover effect (lighten & shadow) */
+
 .btn {
     border-radius: 1em;
     @include card-shadow(-2px);
@@ -20,7 +20,7 @@
     font-weight: 500;
     box-shadow: inset 0px -5px 5px rgba(0,0,0,0.2), 0px 5px 10px -2px #9999;
     min-width: 180px;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 
