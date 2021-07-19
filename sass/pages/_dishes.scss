@@ -32,6 +32,12 @@
 /* Check animation */
 
 .menu-list__type__dish {
+    @media (max-width: map-get($breakpoints, laptop)) {
+        max-width: 330px;
+    }
+    @media (max-width: map-get($breakpoints, tablet)) {
+        max-width: unset;
+    }
     .check-container {
         transition: ease-in-out 600ms;
         transform: translate(0px);

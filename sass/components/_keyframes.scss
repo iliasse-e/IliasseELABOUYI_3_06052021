@@ -14,19 +14,17 @@
 @keyframes spinner {
     
     0% {
-        transform: rotate(0deg);
+        transform: scale(0.7) rotate(0deg);
         opacity: 1;
-        scale: 0.7;
     }
     
     50% {
-        scale: 1.1;
+        transform: scale(1.1);
     }
   
     100% {
-        transform: rotate(360deg);
+        transform: scale(1) rotate(360deg);
         opacity: 1;
-        scale: 1;
     }
 }
 

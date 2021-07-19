@@ -2,14 +2,14 @@ header {
     box-shadow: 0 4px 10px -7px gray;
     position: relative;
     z-index: auto;
-    padding: 10px 0;
+    padding: 20px 0 10px 0;
     display: flex;
     justify-content: center;
 }
 
 .arrow {
-    position: relative;
-    left: -70px;
+    position: absolute;
+    left: 20px;
     i {
         vertical-align: -8px;
     }

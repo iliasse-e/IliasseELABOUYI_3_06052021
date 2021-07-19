@@ -1,7 +1,26 @@
 /* Main page */
 
 .list {
-    margin: 70px 0;
+    
+
+    @media (max-width: map-get($breakpoints, big-screen)) {
+        display: grid;
+        grid-gap: 15px;
+        margin: 10px 0 50px 0;    
+    }
+    @media (max-width: map-get($breakpoints, tablet)) {
+        display: block;
+        grid-gap: unset;
+        margin: 70px 0;    
+    }
+    h2 {
+        @media (max-width: map-get($breakpoints, big-screen)) {
+            grid-column: 1/5;
+        }
+        @media (max-width: map-get($breakpoints, laptop)) {
+            grid-column: 1/3;
+        }
+    }
     .card-restaurant {
         &__photo {
             width: 100%;
@@ -22,6 +41,7 @@
 
 .card-sticker {
 width: 25%;
+max-width: 180px;
 background-color: #99e2d0;
 position: relative;
 right: -70%;
@@ -58,6 +78,7 @@ border-radius: 0.13em;
     opacity: 0;
 
     animation: spinner ease-out 2000ms;
+    z-index: 10;
 }
 
 .main-body header, .main-body main, .main-body footer {
