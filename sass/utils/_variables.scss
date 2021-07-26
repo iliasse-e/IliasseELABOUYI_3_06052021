@@ -10,3 +10,20 @@ $fifth:#353535;
 $mint:#99e2d0;
 
 $white-background :#f6f6f6;
+
+/* Media queries - Breakpoints */
+
+$breakpoints: (
+  mobile: 320px,
+  tablet: 480px,
+  small-screen: 769px,
+  laptop: 1024px,
+  desktop: 1224px,
+);
+
+/* Margin */
+
+$small-spacing: 10px;
+$regular-spacing: 20px;
+$medium-spacing: 40px;
+$big-spacing: 70px;

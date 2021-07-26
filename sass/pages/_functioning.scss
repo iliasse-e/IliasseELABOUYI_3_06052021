@@ -1,50 +1,43 @@
 /* Fonctionnement section (title + buttons)*/
 
 .functioning {
-    @media (max-width: map-get($breakpoints, big-screen)) {
-        display: grid; 
-        margin : 10px 0;          
+    margin : 50px 0;
+    
+    @include small-screen {
+        display: grid;
+        margin : 10px 0;
+        grid-gap: 0.5%;
+    }  
+
+    @include laptop {
+        grid-gap: 2%; 
     }
-    @media (max-width: map-get($breakpoints, tablet)) {
-        display: unset;    
-        margin : 50px 0;           
+    
+    @include desktop {
+        grid-column-gap: 5%;
     }
+
     h2 {
-        @media (max-width: map-get($breakpoints, big-screen)) {
-            grid-column: 1/3;           
-        }
-        @media (max-width: map-get($breakpoints, tablet)) {
-            grid-column: unset;           
+        @include desktop {
+            grid-column: 1/3;
         }
     }
     .functioning__btn {
         display: flex;
         margin-left: 5px;
         justify-content: space-between;
-        @media (max-width: map-get($breakpoints, big-screen)) {
-            padding-right: 19%;
-            max-width: 220px;
-            grid-row: 2;         
-        }
-        @media (max-width: map-get($breakpoints, small-screen)) {
-            padding-right: 9%;
-            max-width: 220px;
-            grid-row: 2;         
-        }
-        @media (max-width: map-get($breakpoints, tablet)) {
-            padding-right: calc(25%*1.3);
-            max-width: none;            
-        }
-        @media (min-width:350px) and (max-width: 480px) {
-            padding-right: calc(22%);
-            max-width: none;            
-        }
-        @media (max-width: 350px) {
-            padding-right: 19%;            
-        }
-        
         padding-top: 25px;
         padding-bottom: 25px;
+        padding-right: 10%;
+
+        @include tablet {
+            max-width: none;
+            grid-row: 2;      
+        }
+
+        @include desktop {
+            padding-right: 15%;   
+        }
         .btn__no {
             border-radius: 50%;
             padding: 3px 7px;

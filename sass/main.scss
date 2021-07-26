@@ -1,10 +1,11 @@
 /* Import */
 
-    /* Base */
-    @import "./base/_font-and-form.scss";
-
+   
     /* Utils */
     @import "./utils/_utils.scss";
+
+    /* Base */
+    @import "./base/_font-and-form.scss";
 
     /* Components */
     @import "./components/_components.scss";

@@ -5,6 +5,7 @@
     @include card-shadow(-2px);
     margin: 20px 0;
     transition: 200ms;
+    
     &:hover {
         opacity: 0.9;
         @include card-shadow(2px);
@@ -17,7 +18,7 @@
     color: white;
     border-radius: 2em;
     border-width: 0;
-    font-weight: 500;
+    font-weight: 600;
     box-shadow: inset 0px -5px 5px rgba(0,0,0,0.2), 0px 5px 10px -2px #9999;
     min-width: 180px;
     font-size: 1em;

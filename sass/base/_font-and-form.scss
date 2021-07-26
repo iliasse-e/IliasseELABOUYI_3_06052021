@@ -8,13 +8,26 @@ p {
 /* Body and general parameters */
 
 body {
-    max-width: 1800px;
+    margin: 0;
     user-select: none;
-    margin: auto;
     font-family: 'Roboto';
+
     main {
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: $regular-spacing;
+        margin-right: $regular-spacing;
+
+        @include laptop {
+            padding-left: $medium-spacing;
+            padding-right: $medium-spacing;
+        }
+
+        @include desktop {
+
+            max-width: 2800px;
+            margin: auto;
+            padding-left: $big-spacing;
+            padding-right: $big-spacing;
+        }
     }
 }
 

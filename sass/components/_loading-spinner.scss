@@ -1,0 +1,50 @@
+/* Spinner animation */
+
+.loading {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    left: calc(50% - 70px);
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    width: 70px;
+    height: 70px;
+    @include pink-gradient;
+    border-radius: 50%;
+    opacity: 0;
+
+    animation: spinner ease-out 2000ms;
+    z-index: 10;
+}
+
+.main-body header, .main-body main, .main-body footer {
+    animation: spinner-layer 2000ms;
+}
+
+/* Key-frame Spinner */
+
+@keyframes spinner {
+    0% {
+        transform: scale(0.7) rotate(0deg);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+        opacity: 1;
+    }
+}
+
+/* Opacity background for spinner */
+
+@keyframes spinner-layer {
+    0%, 100% {
+        opacity: 0.6;
+    }
+}
