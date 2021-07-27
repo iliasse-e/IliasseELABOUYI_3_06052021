@@ -9,6 +9,7 @@ p {
 
 body {
     margin: 0;
+    overflow-x: hidden;
     user-select: none;
     font-family: 'Roboto';
 
@@ -22,7 +23,6 @@ body {
         }
 
         @include desktop {
-
             max-width: 2800px;
             margin: auto;
             padding-left: $big-spacing;

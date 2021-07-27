@@ -21,9 +21,16 @@ $breakpoints: (
   desktop: 1224px,
 );
 
-/* Margin */
+/* spaces for margin and paddings */
 
 $small-spacing: 10px;
 $regular-spacing: 20px;
 $medium-spacing: 40px;
 $big-spacing: 70px;
+
+
+/* animation duration */
+
+$fast-duration: 400ms;
+$medium-duration: 600ms;
+$slow-duration: 800ms;

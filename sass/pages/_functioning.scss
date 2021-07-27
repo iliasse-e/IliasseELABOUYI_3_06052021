@@ -7,6 +7,7 @@
         display: grid;
         margin : 10px 0;
         grid-gap: 0.5%;
+        grid-template-columns: 1fr 1fr 1fr;
     }  
 
     @include laptop {
@@ -22,6 +23,7 @@
             grid-column: 1/3;
         }
     }
+
     .functioning__btn {
         display: flex;
         margin-left: 5px;
@@ -38,6 +40,7 @@
         @include desktop {
             padding-right: 15%;   
         }
+
         .btn__no {
             border-radius: 50%;
             padding: 3px 7px;
@@ -49,15 +52,19 @@
             position: relative;
             left: -10px;
         }
+
         .fas {
             color : $forth;
         }
+        
         p {
             font-weight: 500;
         }
     }
+    
     .functioning__btn:hover {
         background-color: #f5edff;
+
         i {
             color: $primary;
         }

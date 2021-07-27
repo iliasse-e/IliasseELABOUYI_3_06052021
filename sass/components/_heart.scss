@@ -21,7 +21,7 @@
 
         & + .card-restaurant__liked {  
             z-index: 0;
-            transition: transform ease-in-out 300ms;
+            transition: transform ease-in-out $fast-duration;
             transform:scale(1);
         }
         

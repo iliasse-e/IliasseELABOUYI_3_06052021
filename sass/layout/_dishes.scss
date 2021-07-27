@@ -6,6 +6,13 @@
     text-overflow: ellipsis;
 }
 
+.menu-list__type__dish-text {
+    margin-right: -40px;
+    
+    @include desktop {
+        margin-right: 0px;
+    }
+}
 
 .heading .menu-list__type__dish-price {
     font-weight: 600;
@@ -34,8 +41,9 @@
 .menu-list__type__dish {
     
     .check-container {
-        transition: ease-in-out 600ms;
-        transform: translate(0px);
+        transition: ease-in-out $fast-duration;
+        transform: translate(0px);     
+
         i {
             font-size: 1.5em;
             transition: linear 500ms;
@@ -45,13 +53,22 @@
             left: 20px;
         }
     }
+
     &:hover {
+
         .menu-list__type__dish-text {
-            padding-right: 10px;
+            margin-right: 0px;
         }
+
         .check-container {
             transform: translate(-60px);
             transform-origin: left;
+            padding-left: 20px;
+
+            @include desktop {
+                padding-left: 0px;
+            }
+
             i {
                 transform: rotate(360deg);
             }

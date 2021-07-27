@@ -9,6 +9,10 @@
         margin: 10px 0 50px 0;   
     }
 
+    @include desktop {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
     h2 {
         grid-column: 1/3;
 

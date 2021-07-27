@@ -26,6 +26,7 @@
 /* Menu list */
 
 .menu-list-section {
+    
     @include desktop {
         display: flex;
         justify-content: space-around;
@@ -40,6 +41,7 @@
     &__type {
         margin-left: $small-spacing;
         margin-right: $small-spacing;
+        margin-bottom: $medium-spacing;
         
         @include tablet {
             margin-left: $regular-spacing;
@@ -54,6 +56,7 @@
         @include desktop {
             margin-left: $small-spacing;
             margin-right: $small-spacing;
+            min-width: 390px;
         }
     }
 }
@@ -62,6 +65,7 @@
     border-bottom-width:20px;
     font-weight: 400;
     color: $fifth;
+    
     &:after {
         content: "";
         border-bottom: 3px solid $mint;
@@ -77,7 +81,11 @@
 
     &-title {
         padding-right: 5%;
+        @include desktop {
+            margin-bottom: 40px;
+        }
     }
+
     .aside {
         padding-top: 23px;
     }
@@ -90,17 +98,27 @@
 
 /* Animation scroll */
 
-.menu-list__type {
-    margin-bottom: 40px;
-    animation: menu-scroll 800ms ;
-    transform-origin: top;
+
+@keyframes dish-scroll {
+    0% {
+        opacity: 0.6;
+        margin: -40px 0;
+    }
+
+    100% {
+        opacity: 1;
+        margin: 20px 0;
+    }
 }
 
-@keyframes menu-scroll {
-    0% {
-        transform: scaleY(0.3);
-    }
-    100% {
-        transform: scaleY(1);
-    }
+.entree .btn {
+    @include scroll-animation(0)
+}
+
+.plat .btn {
+    @include scroll-animation(400ms) 
+}
+
+.dessert .btn {
+    @include scroll-animation(800ms) 
 }
