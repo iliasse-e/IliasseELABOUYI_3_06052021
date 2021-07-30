@@ -1,7 +1,7 @@
 /* Colors */
 
 @mixin pink-gradient {
-    background: linear-gradient(0.99turn, #a55cdb, #e771da);
+    background: linear-gradient(0.99turn, $primary, $secondary);
 }
 
 @mixin card-shadow($shadow) {
@@ -14,7 +14,7 @@
 
 @mixin scroll-animation($animation-delay) {
     opacity: 0;
-    animation: dish-scroll ease-out $medium-duration ;
+    animation: dish-scroll ease-out $slow-duration ;
     animation-delay: $animation-delay;
     animation-fill-mode: forwards;
 }

@@ -112,13 +112,13 @@
 }
 
 .entree .btn {
-    @include scroll-animation(0)
+    @include scroll-animation(0ms)
 }
 
 .plat .btn {
-    @include scroll-animation(400ms) 
+    @include scroll-animation(0ms) 
 }
 
 .dessert .btn {
-    @include scroll-animation(800ms) 
+    @include scroll-animation(00ms) 
 }

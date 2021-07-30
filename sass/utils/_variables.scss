@@ -11,6 +11,14 @@ $mint:#99e2d0;
 
 $white-background :#f6f6f6;
 
+
+
+/* Font */
+
+$medium-weight: 500;
+
+
+
 /* Media queries - Breakpoints */
 
 $breakpoints: (
@@ -21,12 +29,15 @@ $breakpoints: (
   desktop: 1224px,
 );
 
+
+
 /* spaces for margin and paddings */
 
 $small-spacing: 10px;
 $regular-spacing: 20px;
 $medium-spacing: 40px;
 $big-spacing: 70px;
+
 
 
 /* animation duration */

@@ -1,7 +1,7 @@
 /* Fonctionnement section (title + buttons)*/
 
 .functioning {
-    margin : 50px 0;
+    margin : 80px 0;
     
     @include small-screen {
         display: grid;
@@ -47,7 +47,7 @@
             background: #fff;
             background-color: $primary;
             color: white;
-            font-weight: 500;
+            font-weight: $medium-weight;
             font-size: 0.9em;
             position: relative;
             left: -10px;
@@ -58,7 +58,7 @@
         }
         
         p {
-            font-weight: 500;
+            font-weight: $medium-weight;
         }
     }
     
