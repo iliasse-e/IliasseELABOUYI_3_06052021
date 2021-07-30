@@ -14,11 +14,10 @@
 
 @mixin scroll-animation($animation-delay) {
     opacity: 0;
-    animation: dish-scroll ease-out $slow-duration ;
+    animation: dish-scroll cubic-bezier(.39,.58,.57,1) $slow-duration ;
     animation-delay: $animation-delay;
     animation-fill-mode: forwards;
 }
-
 
 
 /* Beakpoints */
@@ -43,6 +42,12 @@
 
 @mixin tablet {
     @media (min-width: map-get($breakpoints, tablet)) {
+        @content;
+    }
+}
+
+@mixin large-mobile {
+    @media (min-width: map-get($breakpoints, large-mobile)) {
         @content;
     }
 }

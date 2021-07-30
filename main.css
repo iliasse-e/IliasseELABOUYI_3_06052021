@@ -7,6 +7,16 @@
 /* animation duration */
 /* Colors */
 /* animation */
+@keyframes dish-scroll {
+  0% {
+    opacity: 0.6;
+    margin: -40px 0;
+  }
+  100% {
+    opacity: 1;
+    margin: 20px 0;
+  }
+}
 /* Beakpoints */
 /* Base */
 /* CSS Reset */
@@ -484,6 +494,14 @@ footer .footer__container .footer__logo {
 }
 
 /* Menu list */
+.menu-list-section {
+  font-size: 0.9em;
+}
+@media (min-width: 360px) {
+  .menu-list-section {
+    font-size: 1em;
+  }
+}
 @media (min-width: 1224px) {
   .menu-list-section {
     display: flex;
@@ -556,34 +574,24 @@ footer .footer__container .footer__logo {
 }
 
 /* Animation scroll */
-@keyframes dish-scroll {
-  0% {
-    opacity: 0.6;
-    margin: -40px 0;
-  }
-  100% {
-    opacity: 1;
-    margin: 20px 0;
-  }
-}
 .entree .btn {
   opacity: 0;
-  animation: dish-scroll ease-out 800ms;
-  animation-delay: 0ms;
+  animation: dish-scroll cubic-bezier(0.39, 0.58, 0.57, 1) 800ms;
+  animation-delay: 150ms;
   animation-fill-mode: forwards;
 }
 
 .plat .btn {
   opacity: 0;
-  animation: dish-scroll ease-out 800ms;
-  animation-delay: 0ms;
+  animation: dish-scroll cubic-bezier(0.39, 0.58, 0.57, 1) 800ms;
+  animation-delay: 500ms;
   animation-fill-mode: forwards;
 }
 
 .dessert .btn {
   opacity: 0;
-  animation: dish-scroll ease-out 800ms;
-  animation-delay: 0ms;
+  animation: dish-scroll cubic-bezier(0.39, 0.58, 0.57, 1) 800ms;
+  animation-delay: 900ms;
   animation-fill-mode: forwards;
 }
 

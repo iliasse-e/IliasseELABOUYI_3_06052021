@@ -2,6 +2,7 @@
 
 .menu { 
     margin: 0;
+
 }
 
 .menu-background-image {
@@ -26,6 +27,11 @@
 /* Menu list */
 
 .menu-list-section {
+    font-size: 0.9em;
+
+    @include large-mobile {
+        font-size: 1em;
+    }
     
     @include desktop {
         display: flex;
@@ -99,6 +105,19 @@
 /* Animation scroll */
 
 
+.entree .btn {
+    @include scroll-animation(150ms)
+}
+
+.plat .btn {
+    @include scroll-animation(500ms) 
+}
+
+.dessert .btn {
+    @include scroll-animation(900ms) 
+}
+
+
 @keyframes dish-scroll {
     0% {
         opacity: 0.6;
@@ -109,16 +128,4 @@
         opacity: 1;
         margin: 20px 0;
     }
-}
-
-.entree .btn {
-    @include scroll-animation(0ms)
-}
-
-.plat .btn {
-    @include scroll-animation(0ms) 
-}
-
-.dessert .btn {
-    @include scroll-animation(00ms) 
 }
